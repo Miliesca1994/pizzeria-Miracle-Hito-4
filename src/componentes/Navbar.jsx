@@ -1,53 +1,46 @@
-const Navbar = () => {
-
-  const total = 25000
-  const token = false
+const Navbar = ({ setVista }) => {
+  const total = 25000;
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div className="container">
+    <nav className="navbar navbar-dark bg-dark px-4">
+      <span
+        className="navbar-brand"
+        style={{ cursor: "pointer" }}
+        onClick={() => setVista("home")}
+      >
+        🍕 Pizzeria Miracle since 1994
+      </span>
 
-        <a className="navbar-brand" href="#">
-          🍕 Pizzería Miracle since 1994
-        </a>
+      <div className="d-flex gap-2">
 
-        <div className="d-flex gap-2">
+        <button
+          className="btn btn-outline-light"
+          onClick={() => setVista("home")}
+        >
+          🍕 Home
+        </button>
 
-          <button className="btn btn-outline-light">
-            🍕 Home
-          </button>
+        <button
+          className="btn btn-outline-light"
+          onClick={() => setVista("login")}
+        >
+          🔐 Login
+        </button>
 
-          {token ? (
-            <>
-              <button className="btn btn-outline-light">
-                🔓 Profile
-              </button>
+        <button
+          className="btn btn-outline-light"
+          onClick={() => setVista("register")}
+        >
+          🔐 Register
+        </button>
 
-              <button className="btn btn-outline-light">
-                🔒 Logout
-              </button>
-            </>
-          ) : (
-            <>
-              <button className="btn btn-outline-light">
-                🔐 Login
-              </button>
-
-              <button className="btn btn-outline-light">
-                🔐 Register
-              </button>
-            </>
-          )}
-
-          <button className="btn btn-warning">
-            🛒 Total: ${total.toLocaleString('es-CL')}
-          </button>
-
-        </div>
+        <button className="btn btn-warning">
+          🛒 Total: ${total.toLocaleString("es-CL")}
+        </button>
 
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
