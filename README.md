@@ -40,13 +40,41 @@ src/
 │   └── pizza pepperoni.png
 │
 ├── componentes/
-│   ├── Navbar.jsx
+│   ├── CardPizza.jsx
+│   ├── Footer.jsx
 │   ├── Header.jsx
 │   ├── Home.jsx
-│   ├── CardPizza.jsx
-│   └── Footer.jsx
+│   ├── Login.jsx
+│   ├── Navbar.jsx
+│   └── Register.jsx
 │
 ├── App.jsx
 ├── App.css
 ├── index.css
 └── main.jsx
+
+Aprendizajes del Hito 2
+
+Durante el desarrollo de este hito se practicó:
+
+- Creación de formularios en React.
+- Uso del Hook `useState`.
+- Manejo de eventos.
+- Validación de formularios.
+- Renderizado condicional.
+- Comunicación mediante props.
+- Organización de componentes.
+- Navegación entre Home, Login y Register mediante estados.
+- Integración de nuevas funcionalidades sobre un proyecto existente.
+
+---
+
+## 👩‍💻 Autor
+
+**Milagros Escalante**
+
+Proyecto realizado como parte del aprendizaje de **React y Desarrollo Front-End**.
+
+### 🍕 Pizzeria Miracle since 1994
+
+© 2026 - Todos los derechos reservados.
