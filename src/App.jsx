@@ -1,9 +1,10 @@
 import Navbar from "./componentes/Navbar";
-import Cart from "./componentes/Cart";
+import Pizza from "./componentes/Pizza";
 import Footer from "./componentes/Footer";
 
 // Los utilizaremos nuevamente en próximos hitos
 // import Home from "./componentes/Home";
+// import Cart from "./componentes/Cart";
 // import Register from "./componentes/Register";
 // import Login from "./componentes/Login";
 
@@ -13,10 +14,11 @@ function App() {
       <Navbar />
 
       {/* <Home /> */}
+      {/* <Cart /> */}
       {/* <Register /> */}
       {/* <Login /> */}
 
-      <Cart />
+      <Pizza />
 
       <Footer />
     </>
