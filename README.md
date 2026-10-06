@@ -1,25 +1,38 @@
-# 🍕 Pizzería Mamma Mía - Hito 3
+# 🍕 Pizzería Mamma Mía - Hito 4
 
-Proyecto desarrollado como parte del desafío **Pizzería Mamma Mía - Hito 3** de Desafío Latam.
+Proyecto desarrollado como parte del desafío **Pizzería Mamma Mía - Hito 4** de Desafío Latam.
 
 ## 📌 Descripción
 
-En este hito se implementó la renderización dinámica de componentes utilizando React.
+En este hito se implementó el consumo de una API externa utilizando React.
 
-La aplicación permite visualizar pizzas a partir de un arreglo de datos y simular un carrito de compras con modificación de cantidades y cálculo automático del total.
+La aplicación obtiene la información de las pizzas desde un backend mediante `fetch` y utiliza el hook `useEffect` para realizar las consultas a la API.
+
+También se creó una vista individual para mostrar la información de una pizza específica.
 
 ## 🚀 Funcionalidades
 
-- Renderización dinámica de pizzas.
-- Uso del método `map()` para recorrer el arreglo de pizzas.
-- Uso de props en el componente `CardPizza`.
-- Renderización dinámica de ingredientes.
-- Implementación del componente `Cart`.
-- Manejo del carrito utilizando `useState`.
-- Aumento y disminución de cantidades.
-- Eliminación de productos cuando su cantidad llega a 0.
-- Cálculo dinámico del total mediante `reduce()`.
-- Botón de pago preparado para futuros hitos.
+- Consumo de API utilizando `fetch`.
+- Uso del hook `useEffect`.
+- Uso de `useState` para almacenar los datos obtenidos.
+- Renderización dinámica de pizzas en el componente `Home`.
+- Consumo del endpoint `/api/pizzas`.
+- Creación del componente `Pizza`.
+- Consumo del endpoint `/api/pizzas/p001`.
+- Visualización de una pizza individual.
+- Visualización de nombre, precio, ingredientes, imagen y descripción.
+- Botón "Añadir al carrito" preparado para futuros hitos.
+
+## 🔗 API utilizada
+
+Backend local:
+
+`http://localhost:5000`
+
+Endpoints utilizados:
+
+- `GET /api/pizzas`
+- `GET /api/pizzas/p001`
 
 ## 🛠️ Tecnologías utilizadas
 
@@ -29,6 +42,7 @@ La aplicación permite visualizar pizzas a partir de un arreglo de datos y simul
 - Bootstrap
 - HTML
 - CSS
+- Fetch API
 
 ## 📂 Componentes principales
 
@@ -36,6 +50,7 @@ La aplicación permite visualizar pizzas a partir de un arreglo de datos y simul
 - `Header`
 - `Home`
 - `CardPizza`
+- `Pizza`
 - `Cart`
 - `Login`
 - `Register`
@@ -44,5 +59,4 @@ La aplicación permite visualizar pizzas a partir de un arreglo de datos y simul
 ## 👩‍💻 Autor
 
 **Milagros Escalante**
-
-### 🍕 Pizzeria Miracle since 1994
+Pizzeria Miracle since 1994
