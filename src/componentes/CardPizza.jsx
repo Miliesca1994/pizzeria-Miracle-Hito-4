@@ -1,54 +1,23 @@
-const CardPizza = ({ name, price, ingredients, img }) => {
-  return (
-    <div className="col-md-4 mb-4">
-
-      <div className="card h-100 shadow">
-
-        <img
-          src={img}
-          className="card-img-top"
-          alt={name}
-        />
-
-        <div className="card-body">
-
-          <h3 className="card-title">
-            {name}
-          </h3>
-
-          <h4 className="text-danger">
-            ${price.toLocaleString('es-CL')}
-          </h4>
-
-          <p className="card-text">
-            <strong>Ingredientes:</strong>
-          </p>
-
-          <ul>
-            {ingredients.map((ingredient, index) => (
-              <li key={index}>
-                {ingredient}
-              </li>
-            ))}
-          </ul>
-
-          <div className="d-flex justify-content-between">
-
-            <button className="btn btn-outline-primary">
-              Ver más
-            </button>
-
-            <button className="btn btn-success">
-              Añadir
-            </button>
-
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  )
-}
-
-export default CardPizza
+export const pizzaCart = [
+  {
+    id: "P001",
+    name: "Napolitana",
+    price: 5950,
+    count: 1,
+    img: "https://imag.bonviveur.com/pizza-napolitana.jpg",
+  },
+  {
+    id: "P002",
+    name: "Española",
+    price: 7250,
+    count: 1,
+    img: "https://sultanalpaso.cl/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-24-at-4.23.42-PM-11.jpeg",
+  },
+  {
+    id: "P003",
+    name: "Salame",
+    price: 5990,
+    count: 1,
+    img: "https://littlecaesars.com/images/menu/embpep.png",
+  },
+];

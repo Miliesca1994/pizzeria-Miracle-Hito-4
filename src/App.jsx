@@ -1,21 +1,22 @@
-import { useState } from "react";
-
 import Navbar from "./componentes/Navbar";
-import Home from "./componentes/Home";
-import Register from "./componentes/Register";
-import Login from "./componentes/Login";
+import Cart from "./componentes/Cart";
 import Footer from "./componentes/Footer";
 
-function App() {
-  const [vista, setVista] = useState("home");
+// Los utilizaremos nuevamente en próximos hitos
+// import Home from "./componentes/Home";
+// import Register from "./componentes/Register";
+// import Login from "./componentes/Login";
 
+function App() {
   return (
     <>
-      <Navbar setVista={setVista} />
+      <Navbar />
 
-      {vista === "home" && <Home />}
-      {vista === "register" && <Register />}
-      {vista === "login" && <Login />}
+      {/* <Home /> */}
+      {/* <Register /> */}
+      {/* <Login /> */}
+
+      <Cart />
 
       <Footer />
     </>
